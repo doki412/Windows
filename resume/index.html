@@ -3,7 +3,8 @@
 
 <head>
     <title>我的个人简历</title>
-    <link rel="stylesheet" href="./a.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./loading.css">
     <script src="https://at.alicdn.com/t/font_888434_7mbu1byunj6.js"></script>
     <style type="text/css">
         .icon {
@@ -17,6 +18,9 @@
 </head>
 
 <body>
+    <div id="siteWelcome" class="site-welcome active">      
+        <div class="loading"></div>
+    </div>
     <div class="topNavBar">
         <div class="topNavBar-inner clearfix">
             <a class="logo" href="#" alt="logo">
@@ -180,6 +184,11 @@
             </div>
         </div>
     </section>
+    <script>
+    setTimeout(function(){
+        siteWelcome.classList.remove('active')        
+    },1000)
+    </script>
 </body>
 
 </html>
